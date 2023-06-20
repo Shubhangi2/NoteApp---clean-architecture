@@ -66,7 +66,7 @@ fun AddEditNoteScreen(
     Scaffold(floatingActionButton = {
         
         FloatingActionButton(onClick = {
-            AddEditNoteEvent.SaveNote
+            viewModel.onEvent(AddEditNoteEvent.SaveNote)
             },
             backgroundColor = MaterialTheme.colors.primary
         ) {
